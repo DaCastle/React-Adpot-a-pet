@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "React-Adopt-a-pet",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "format": "prettier --write \"src/**/*.{js,jsx,css,json} \"",
     "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,json} \"",
     "lint": "eslint \"**/*.{js,jsx}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,11 @@
     "eslint": "^5.5.0",
     "eslint-config-prettier": "^3.0.1",
     "eslint-plugin-prettier": "^2.6.2",
+    "parcel-bundler": "^1.9.7",
     "prettier": "^1.14.2"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   }
 }
