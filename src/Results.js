@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "react-dom";
 import pf from "petfinder-client";
 import Pet from "./Pet";
 
@@ -8,7 +7,7 @@ const petfinder = pf({
   secret: process.env.API_SECRET
 });
 
-class App extends React.Component {
+class Results extends React.Component {
   constructor(props) {
     super(props);
 
@@ -38,9 +37,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h1>Adopt Me!</h1>
-        <div>
+        <div className="search">
           {this.state.pets.map(pet => {
             let breed;
 
@@ -55,14 +52,15 @@ class App extends React.Component {
                 animal={pet.animal}
                 name={pet.name}
                 breed={breed}
+                media={pet.media}
+                location={`${pet.contact.city}, ${pet.contact.state}`}
+                id={pet.id}
               />
             );
           })}
         </div>
-      </div>
     );
   }
 }
 
-// Render what(instance of an class), where
-render(<App />, document.getElementById("root"));
+export default Results;
