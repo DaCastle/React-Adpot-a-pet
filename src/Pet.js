@@ -3,7 +3,7 @@ import { Link } from "@reach/router";
 
 class Pet extends React.Component {
   render() {
-    // 'destructuring' : this.props.name === name
+    // 'destructuring' : name === this.props.name
     const { name, animal, breed, media, location, id } = this.props;
 
     let photos = [];
