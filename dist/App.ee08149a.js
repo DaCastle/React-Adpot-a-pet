@@ -22148,7 +22148,7 @@ if (!isNode) {
 }
 
 let key;
-const BASE_URL = "http://api.petfinder.com";
+const BASE_URL = "https://api.petfinder.com";
 const ANIMALS = [
   "dog",
   "cat",
