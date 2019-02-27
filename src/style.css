@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #ad343e;
+  background-color: rgb(14, 86, 110);
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -187,4 +187,8 @@ header {
 #modal .buttons button {
   display: inline-block;
   margin-right: 15px;
+}
+
+:disabled {
+  background-color: lightcoral;
 }

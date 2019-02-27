@@ -8,8 +8,8 @@ import SearchParams from "./SearchParams";
 import { Provider } from "./SearchContext";
 
 const petfinder = pf({
-  key: process.env.API_KEY,
-  secret: process.env.API_SECRET
+  key: "794ef9fbd55ce6640513f2d84957e28e", //process.env.API_KEY,
+  secret: "9cdfbf392b508d4ba8293b7337529a6b" // process.env.API_SECRET
 });
 
 class App extends React.Component {
@@ -39,7 +39,7 @@ class App extends React.Component {
       {
         animal: event.target.value
       },
-      this.getBreeds()
+      this.getBreeds
     );
   };
 
